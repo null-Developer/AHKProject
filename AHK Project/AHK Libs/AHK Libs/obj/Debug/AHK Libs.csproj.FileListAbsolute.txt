@@ -1,0 +1,7 @@
+C:\Users\null\source\repos\AHK Libs\AHK Libs\bin\Debug\AHK Libs.exe.config
+C:\Users\null\source\repos\AHK Libs\AHK Libs\bin\Debug\AHK Libs.exe
+C:\Users\null\source\repos\AHK Libs\AHK Libs\bin\Debug\AHK Libs.pdb
+C:\Users\null\source\repos\AHK Libs\AHK Libs\obj\Debug\AHK Libs.csproj.CoreCompileInputs.cache
+C:\Users\null\source\repos\AHK Libs\AHK Libs\obj\Debug\AHK Libs.exe
+C:\Users\null\source\repos\AHK Libs\AHK Libs\obj\Debug\AHK Libs.pdb
+C:\Users\null\source\repos\AHK Libs\AHK Libs\obj\Debug\AHK Libs.csprojAssemblyReference.cache

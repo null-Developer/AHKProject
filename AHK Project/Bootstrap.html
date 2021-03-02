@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="macro.css" rel="stylesheet">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .title-btn {
+      padding: 0.35em 1.0em;
+      cursor: pointer;
+      vertical-align: bottom;
+      font-family: Webdings;
+      font-size: 11pt;
+    }
+
+    .title-btn:hover {
+      background: rgba(0, 0, 0, .2);
+    }
+
+    .title-btn-close:hover {
+      background: #dc3545;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Title Bar -->
+  <header>
+    <div class="d-flex align-items-stretch bg-dark text-white">
+      <span class="flex-grow-1 px-2 py-1" onmousedown="neutron.DragTitleBar()">null's Tools</span>
+      <span class="title-btn" onclick="neutron.Minimize()">0</span>
+      <span class="title-btn" onclick="neutron.Maximize()">1</span>
+      <span class="title-btn title-btn-close" onclick="neutron.Close()">r</span>
+    </div>
+  </header>
+  <!-- End Title Bar -->
+
+  <!-- Window Contents -->
+  <div class="flex-grow-1 d-flex">
+
+    <!-- Sidebar -->
+    <div class="nav flex-column nav-pills bg-dark text-light" id="v-pills-tab" role="tablist"
+      aria-orientation="vertical">
+      <a class="nav-link text-light active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+        aria-controls="v-pills-home" aria-selected="true">Info</a>
+	  <a class="nav-link text-light" id="v-pills-discord-tab" data-toggle="pill" href="#v-pills-discord" role="tab"
+        aria-controls="v-pills-discord" aria-selected="false">Discord</a>
+		<a class="nav-link text-light" id="v-pills-rust-tab" data-toggle="pill" href="#v-pills-rust" role="tab"
+        aria-controls="v-pills-rust" aria-selected="false">Rust</a>
+      <a class="nav-link text-light" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+        aria-controls="v-pills-settings" aria-selected="false">Credit</a>
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Page Content -->
+    <div class="flex-grow-1 overflow-auto">
+      <div class="tab-content container p-2" id="v-pills-tabContent">
+
+        <!-- v-pills-home -->
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <h1>Welcome to null's Tools!</h1>
+          <p>
+            Hello this is a small project made by null. This project is made for educational purposes only.
+          </p>
+        </div>
+        <!-- End v-pills-home -->
+		
+		<!-- v-pills-discord -->
+        <div class="tab-pane fade" id="v-pills-discord" role="tabpanel" aria-labelledby="v-pills-discord-tab">
+          <h1>Discord</h1>
+          <button type="button" onclick="ahk.DiscordOpen()" class="btn btn-success">Run Discord</button>
+          <button type="button" onclick="ahk.DiscordInject()" class="btn btn-danger">Inject Discord</button>
+        </div>
+        <!-- End v-pills-discord -->
+		
+		<!-- v-pills-rust -->
+        <div class="tab-pane fade" id="v-pills-rust" role="tabpanel" aria-labelledby="v-pills-rust-tab">
+          <h1>Rust</h1>
+          <button type="button" onclick="ahk.DiscordOpen()" class="btn btn-success">Inject Cheats</button>
+          <button type="button" onclick="ahk.DiscordInject()" class="btn btn-danger">Ddos</button>
+        </div>
+        <!-- End v-pills-rust -->
+
+
+        <!-- v-pills-settings -->
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+          Discord: null#6969
+        </div>
+        <!-- End v-pills-settings -->
+
+      </div>
+    </div>
+    <!-- End Page Contents -->
+
+  </div>
+  <!-- End Window Contents -->
+
+</body>
+
+</html>
